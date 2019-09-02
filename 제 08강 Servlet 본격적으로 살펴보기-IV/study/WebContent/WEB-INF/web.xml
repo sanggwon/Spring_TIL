@@ -10,6 +10,10 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <listener>
+	<listener-class>com.javalec.ex.ServletL</listener-class>
+  </listener>
+  
   <context-param>
   	<param-name>id</param-name>
   	<param-value>abcdef</param-value>
