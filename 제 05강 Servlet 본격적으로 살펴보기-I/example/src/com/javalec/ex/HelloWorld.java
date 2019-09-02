@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class HelloWorld
  */
 @WebServlet("/HelloWorld")
-public class HelloWorld extends HttpServlet {
+public class HelloWorld extends HttpServlet /* HttpServlet 클래스 상속 */{
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -27,11 +27,13 @@ public class HelloWorld extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("HelloWorld~~");
+	protected void doGet(HttpServletRequest request /* 요청처리객체 */
+			, HttpServletResponse response /* 응답처리객체 */
+			) throws ServletException, IOException {
+		System.out.println("HelloWorld~~"); /* 콘솔 출력 */
 		
 		response.setContentType("text/html; charset=euc-kr");
-		PrintWriter writer = response.getWriter();
+		PrintWriter writer = response.getWriter(); /* 웹브라우저에 출력하기 위한 스트림 */
 		
 		writer.println("<html>");
 		writer.println("<head>");
