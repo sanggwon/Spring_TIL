@@ -12,12 +12,12 @@
   
   
   <!-- mapping -->
-  <servlet>
-  	<servlet-name>helloworld</servlet-name> <!-- 임의의 이름을 만들어줌 -->
-  	<servlet-class>com.javalec.ex.HelloWorld</servlet-class> <!-- 매핑할 클래스 파일명을 패키지명을 포함하여 입력 -->
+<!--   <servlet>
+  	<servlet-name>helloworld</servlet-name> 임의의 이름을 만들어줌
+  	<servlet-class>com.javalec.ex.HelloWorld</servlet-class> 매핑할 클래스 파일명을 패키지명을 포함하여 입력
   </servlet>
   <servlet-mapping>
-  	<servlet-name>helloworld</servlet-name> <!-- 임의의 이름으로 설정한 이름을 가져옴 -->
-  	<url-pattern>/hw</url-pattern> <!-- servlet-class의 클래스를 매핑할 임의의 이름을 입력. '/'로 시작 -->
-  </servlet-mapping>
+  	<servlet-name>helloworld</servlet-name> 임의의 이름으로 설정한 이름을 가져옴
+  	<url-pattern>/hw</url-pattern> servlet-class의 클래스를 매핑할 임의의 이름을 입력. '/'로 시작
+  </servlet-mapping> -->
 </web-app>

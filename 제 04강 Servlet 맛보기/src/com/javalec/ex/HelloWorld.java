@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorld
  */
-@WebServlet("/HWorld")
+@WebServlet("/HWorld") // 어노테이션, url로 접근할 때 사용하는 닉네임 같은것.
 public class HelloWorld extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
