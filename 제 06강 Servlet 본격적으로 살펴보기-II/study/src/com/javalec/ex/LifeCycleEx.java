@@ -1,6 +1,9 @@
 package com.javalec.ex;
 
 import java.io.IOException;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -43,6 +46,18 @@ public class LifeCycleEx extends HttpServlet {
 	public void destroy() {
 		// TODO Auto-generated method stub
 		System.out.println("destroy");
+	}
+	
+	@PostConstruct
+	private void initPostConstruct() {
+		// TODO Auto-generated method stub
+		System.out.println("initPostConstruct");
+	}
+	
+	@PreDestroy
+	private void destoryPreDestory() {
+		// TODO Auto-generated method stub
+		System.out.println("destoryPreDestory");
 	}
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
