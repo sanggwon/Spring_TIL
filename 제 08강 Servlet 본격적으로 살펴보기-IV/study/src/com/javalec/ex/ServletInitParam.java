@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServletInitParam
  */
-/* @WebServlet("/ServletInitParam") */
+@WebServlet(urlPatterns = {"/Init"}, initParams = {@WebInitParam(name="id", value="aaaaa"), @WebInitParam(name="pw", value="99999")})
 public class ServletInitParam extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

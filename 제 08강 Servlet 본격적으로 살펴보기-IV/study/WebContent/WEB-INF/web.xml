@@ -10,7 +10,7 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-   <servlet>
+<!--    <servlet>
   		<servlet-name>ServletInitParam</servlet-name>
   		<servlet-class>com.javalec.ex.ServletInitParam</servlet-class>
   	
@@ -31,6 +31,6 @@
   <servlet-mapping>
   	<servlet-name>ServletInitParam</servlet-name>
 	<url-pattern>/InitParam</url-pattern>
-  </servlet-mapping>
+  </servlet-mapping> -->
   
 </web-app>
