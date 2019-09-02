@@ -49,3 +49,25 @@
 
   → web.xml파일에 리스너 클래스 기술 
 
+- 리스너 클래스 제작 
+
+  → @WebListener 추가(어노테이션)
+
+
+
+### 참고(순서)
+
+- contextInitialized()
+
+  → @PostConstruct(선처리)
+
+  → init()
+
+  → doget() or dopost()
+
+  → destroy()
+
+  → @PreDestroy(후처리)
+
+  → contextDestroyed()
+
