@@ -24,5 +24,9 @@
 	int[] iArr = {10, 20, 30};
 	out.println( Arrays.toString(iArr) );
 %>
+
+<h1> include.jsp 페이지 입니다. </h1><br />
+<%@ include file="include01.jsp" %>
+<h1> 다시 include.jsp 페이지 입니다. </h1><br />
 </body>
 </html>
