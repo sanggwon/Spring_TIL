@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
     
-<%@ page errorPage="errorPage.jsp"%>
+<%-- <%@ page errorPage="errorPage.jsp"%> --%>
 
 <!DOCTYPE html>
 <html>
@@ -10,8 +10,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
+	<%-- <%
 		int i = 40/0;
-	%>
+	%> --%>
+	
+	<a href="error03.jsp">error03.jsp</a>
 </body>
 </html>
